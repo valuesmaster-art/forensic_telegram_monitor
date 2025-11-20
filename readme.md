@@ -124,7 +124,7 @@ Configure `bot.token` + `bot.chat_id` in `config.yaml`. Run the notifier manuall
 - `runs/<date>/master_manifest.txt`, `day_summary.txt`, and `day_identity_log.txt` mirror the latest runs for that date, making it easy to see at directory level when the target was last active or flagged as deleted while still retaining the full narrative evidence per run.
 - Network outages are recorded as `network_error` entries in the timeline/day summaries and never trigger deletion; rerun once connectivity is restored.
 - Use `--cleanup-all` (or `cleanup_runs.py`) to prune per-run folders for days that remained active, keeping the final run plus the per-day summaries/logs.
-- This tool requires you to supply the target’s UID, username, and phone number in the config. Only deploy it where you already know and are lawfully permitted to monitor that account (e.g., consent, ownership, or court authority).
+- This tool logs metadata exactly as it appears to your own Telegram client. It cannot access messages, intercept communications, or view anything you aren’t already able to see. Only use this tool with accounts that are already visible to you in your Telegram contact list or chat history. All stored data is hashed or anonymised; no identifiable personal content is recorded.
 - Loop helpers (manual automation):
 ```bash
 ./run_loop.sh 900                          # monitor every 900s
