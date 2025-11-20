@@ -1,0 +1,28 @@
+# OS junk
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Deployment artifacts
+dist/
+*.tar.gz
+logs/
+
+# Evidence and secrets
+config.yaml
+targets/
+*.session
+*.session-journal
+
+# Misc
+*.log
+deploy_to_pi.sh
+install_launch_agent.sh
+install_pi_service.sh
+instruction.txt
+launch_template.plist
