@@ -1,0 +1,24 @@
+api:
+  id: 123456
+  hash: "your_api_hash_here"
+  session: "session_name"
+
+target:
+  uid: 123456789
+  username: "example_username"
+  phone: "+10000000000"
+  address_book_name: "Contact Name"
+  anchor_media_sha256: ""
+
+acquisition:
+  outdir: targets
+  media_limit: 1000
+  message_sample_count: 5
+
+message_markers:
+  - label: "Example marker"
+    content: "Exact message text to monitor"
+
+bot:
+  token: ""
+  chat_id: ""
